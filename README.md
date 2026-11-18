@@ -52,17 +52,6 @@ TaskFlow uses the browser's **LocalStorage** to save task data.
 
 This allows tasks to remain available even after refreshing or reopening the browser.
 
-## 🚀 Run Locally
-
-1. Clone this repository:
-
-```bash
-git clone https://github.com/muskanjoshi190/TaskFlow-Todo-App.git
-```
-
-2. Open the project folder in VS Code.
-3. Open `index.html` in your browser or use the Live Server extension.
-
 ## 👩‍💻 Developer
 
 **Muskan Joshi**
