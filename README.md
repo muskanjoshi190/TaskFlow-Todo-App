@@ -1,30 +1,77 @@
-# TaskFlow — Interactive To-Do List
+# TaskFlow – Interactive To-Do List
 
-A responsive to-do list built with HTML, CSS and vanilla JavaScript. Tasks are saved in browser LocalStorage, so they remain after refreshing the page.
+A simple and responsive To-Do List web application built using **HTML, CSS, and JavaScript**. TaskFlow helps users organize daily tasks, track their progress, and manage completed activities with a clean interface.
 
-## Features
-- Add tasks using the Add button or Enter key
-- Rejects empty tasks
-- Mark tasks complete / active
-- Delete individual tasks
-- All, Active and Completed filters
-- Remaining-task counter
-- Clear all completed tasks
-- LocalStorage persistence with safe JSON parsing
-- Uses `textContent` to display task text safely
+## 🌐 Live Demo
 
-## Run locally
-1. Extract this folder.
-2. Open it in VS Code.
-3. Open `index.html` with the VS Code Live Server extension.
-4. Add a few tasks, refresh the page, and confirm they remain.
+[View TaskFlow Live](https://muskanjoshi190.github.io/TaskFlow-Todo-App/)
 
-## How LocalStorage works
-- On startup, `loadTasks()` reads the `taskflow_tasks` key and converts the saved JSON text back into an array using `JSON.parse()`.
-- Whenever tasks change, `saveTasks()` converts the array into JSON text using `JSON.stringify()` and stores it with `localStorage.setItem()`.
-- `try/catch` protects the app if saved data is damaged or browser storage is unavailable.
+## ✨ Features
 
-## Files
-- `index.html` — page structure
-- `style.css` — responsive styling
-- `app.js` — task state, events, rendering and LocalStorage
+- **Add Tasks:** Create new tasks easily.
+- **Complete Tasks:** Mark tasks as completed or undo them.
+- **Delete Tasks:** Remove tasks whenever needed.
+- **Task Filters:** View All, Active, or Completed tasks.
+- **Remaining Task Counter:** Track pending tasks.
+- **Clear Completed:** Remove all completed tasks at once.
+- **LocalStorage:** Automatically saves tasks in the browser.
+- **Responsive Design:** Works on desktop and mobile screens.
+
+## 🛠️ Technologies Used
+
+- HTML5 – Website structure
+- CSS3 – Styling and responsive layout
+- JavaScript – Dynamic functionality and DOM manipulation
+- LocalStorage – Persistent task storage
+
+## 📂 Project Structure
+
+```text
+TaskFlow-Todo-App/
+│
+├── index.html
+├── style.css
+├── app.js
+└── README.md
+```
+
+## ⚙️ How It Works
+
+1. Enter a task in the input field.
+2. Click the Add button or press Enter.
+3. Mark tasks as completed when finished.
+4. Delete tasks that are no longer needed.
+5. Use filters to view tasks by status.
+
+## 💾 Data Storage
+
+TaskFlow uses the browser's **LocalStorage** to save task data.
+
+- `JSON.stringify()` converts the tasks array into a string before saving.
+- `JSON.parse()` converts the stored string back into JavaScript data when loading the application.
+
+This allows tasks to remain available even after refreshing or reopening the browser.
+
+## 🚀 Run Locally
+
+1. Clone this repository:
+
+```bash
+git clone https://github.com/muskanjoshi190/TaskFlow-Todo-App.git
+```
+
+2. Open the project folder in VS Code.
+3. Open `index.html` in your browser or use the Live Server extension.
+
+## 👩‍💻 Developer
+
+**Muskan Joshi**
+
+B.Tech – Computer Science Engineering
+
+- GitHub: [@muskanjoshi190](https://github.com/muskanjoshi190)
+- LinkedIn: [Muskan Joshi](https://www.linkedin.com/in/muskan-joshi-140310341/)
+
+---
+
+⭐ If you like this project, consider giving it a star!
